@@ -4,5 +4,7 @@ import os
 #Create instance of app
 app = create_app()
 
+
+
 if __name__ == '__main__':
-  app.run(debug=True, port=os.getenv("PORT", default=3001))
+  app.run(debug=True, port=os.getenv("PORT", default=3001), host="0.0.0.0")
